@@ -1,0 +1,7 @@
+<template>
+    <img class="slds-m-bottom_xx-small" src={contact.Picture__c} alt="Profile photo">
+    <p class="slds-text-heading_medium">{contact.Name}</p>
+    <p class="slds-text-title_caps">{contact.Title}</p>
+    <p><lightning-formatted-phone value={contact.Phone}></lightning-formatted-phone></p>
+    <p><lightning-formatted-email value={contact.Email}></lightning-formatted-email></p>
+</template>
