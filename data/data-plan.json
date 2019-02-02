@@ -1,0 +1,10 @@
+[
+    {
+        "sobject": "Contact",
+        "saveRefs": true,
+        "resolveRefs": true,
+        "files": [
+            "Contacts.json"
+        ]
+    }
+]
