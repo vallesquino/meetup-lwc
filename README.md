@@ -13,11 +13,11 @@
   sfdx force:auth:web:login -d -a spring19hub
   ```
 
-3. Clone the lwc-recipes repository:
+3. Clone the meetup-lwc repository:
 
   ```
-  git clone https://github.com/trailheadapps/lwc-recipes
-   cd lwc-recipes
+  git clone https://github.com/vallesquino/meetup-lwc
+   cd meetup-lwc
   ```
 
 4. Create a scratch org:
