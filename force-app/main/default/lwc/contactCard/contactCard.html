@@ -1,3 +1,14 @@
 <template>
-    <lightning-card title="Contacts" icon-name="standard:contact"></lightning-card>
+    <lightning-card title="Contacts" icon-name="standard:contact">
+        <lightning-layout if:true={contacts.data} class="slds-p-around_medium">
+            <lightning-layout-item size="4" class="slds-grid slds-grid_vertical">
+                <template for:each={contacts.data} for:item="contact">
+                    <c-contact-media-item class="slds-m-bottom_xx-small" key={contact.Id} contact={contact} onselect={handleSelect}></c-contact-media-item>
+                </template>
+            </lightning-layout-item>
+            <lightning-layout-item size="8" class="slds-p-left_medium">
+                <c-contact-detail if:true={selectedContact} contact={selectedContact}></c-contact-detail>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
 </template>

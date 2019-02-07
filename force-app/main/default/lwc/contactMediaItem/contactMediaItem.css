@@ -1,0 +1,11 @@
+:host {
+    cursor: pointer;
+}
+:host:hover{
+    background-color: var(--lwc-colorBackground);
+}
+img {
+    width: var(--lwc-squareIconLargeBoundary);
+    height: var(--lwc-squareIconLargeBoundary);
+    border-radius: 50%;
+}
